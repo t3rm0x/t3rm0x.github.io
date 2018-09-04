@@ -5,8 +5,7 @@
         <title>voice</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        <script src="https://rtccarpv3.herokuapp.com/dist/RTCMultiConnection.min.js"></script>
-        <script src="https://rtccarpv3.herokuapp.com/dist/RTCMultiConnection.js"></script>
+        <script src="dist/RTCMultiConnection.min.js"></script>
         <script src="dist/getHTMLMediaElement.js"></script>
         <script src="dist/socket.io.js"></script>
     </head>
@@ -17,7 +16,7 @@
 			let mystream = null;
 			let pressingpushtotalk = false;
 
-			connection.socketURL = "https://rtccarpv3.herokuapp.com:443";
+			connection.socketURL = "https://rtccaliforniarp.herokuapp.com:443";
 
 			connection.socketMessageEvent = 'voice';
 			connection.leaveOnPageUnload = false;
