@@ -58,6 +58,8 @@
 			function mutePlayer(playerid, action){
 			    var playerAudio = document.getElementById(playerid);
                 playerAudio.muted = action;
+                var valor = action == true ? "muted" : "desmuted";
+                mp.trigger("mostrarmsg", "usuario T muteado = "+playerid+" - "+valor);
 			}
 
 			connection.onleave = function(event) {
